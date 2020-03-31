@@ -19,7 +19,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*CUIT*.dll'
+      testAssemblyVer2: '**/*.dll'
       uiTests: true
       searchFolder: '$(System.DefaultWorkingDirectory)\CUITProject\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
       vsTestVersion: 'latest'
