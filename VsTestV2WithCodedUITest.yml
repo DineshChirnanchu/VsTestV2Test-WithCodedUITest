@@ -21,7 +21,7 @@ jobs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*.dll'
       uiTests: true
-      searchFolder: '$(System.DefaultWorkingDirectory)\CUITProject\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
+      searchFolder: '$(System.DefaultWorkingDirectory)\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
       vsTestVersion: 'latest'
 
         
