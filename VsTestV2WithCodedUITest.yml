@@ -23,7 +23,7 @@ jobs:
       testAssemblyVer2: '**/*.dll'
       uiTests: true
       searchFolder: '$(System.DefaultWorkingDirectory)\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
-      vsTestVersion: toolsInstaller
+      vsTestVersion: latest
 
 
         
