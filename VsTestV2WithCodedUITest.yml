@@ -15,6 +15,7 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
+      packageFeedSelector: 'nugetOrg'
       versionSelector: 'latestPreRelease' 
       
   - task: VSTest@2
