@@ -10,12 +10,14 @@ trigger:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool: Din_pool
+  pool: Default
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'latestPreRelease' 
+      packageFeedSelector: 'nugetOrg'
+      versionSelector: 'specificVersion'
+      testPlatformVersion: '16.5.0'
       
   - task: VSTest@2
     inputs:
@@ -24,6 +26,7 @@ jobs:
       uiTests: true
       searchFolder: '$(System.DefaultWorkingDirectory)\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
       vsTestVersion: 'toolsInstaller'
+     
 
 
         
